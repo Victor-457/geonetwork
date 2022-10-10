@@ -18,8 +18,8 @@
       li {
         .resultcard {
           .title {
-            background: @gn-resultcard-title-background-color;
-            border: @gn-resultcard-title-border;
+            background-color: darken(#70BFA6, 10%);
+            border-color: darken(#70BFA6, 15%);
             h4 {
               color: @gn-resultcard-title-color;
             }
@@ -28,10 +28,24 @@
         .resultcard.hasThumbnail {
           &:hover {
             .title {
-              background: @gn-resultcard-title-background-color-hover;
+              background-color: #DEB559 !important;
+              border-color: darken(#DEB559, 5%) !important;
+            }
+          }
+        }
+        .resultcard {
+          &:hover {
+            .title {
+              background-color: #DEB559 !important;
+              border-color: darken(#DEB559, 5%) !important;
             }
           }
         }
       }
     }
+  }
+
+  .gn-info-list-blocks .gn-info-list li:hover .resultcard .title{
+    background-color: #DEB559 !important;
+              border-color: darken(#DEB559, 5%) !important;
   }

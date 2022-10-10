@@ -29,7 +29,25 @@
 #main-tabset > ul:nth-child(1) {
   display: none;
 }
+.nav-pills  li a{
+  color: #F3F3F3;
 
+}
+.nav-pills  li.active  a, .nav-pills  li.active  a:hover, .nav-pills  li.active  a:focus{
+  background-color: darken(#DEB559, 10%);
+  border-color: darken(#DEB559, 15%);
+  color: #145E6E;
+}
+.nav  li  a:hover, .nav  li  a:focus{
+  background-color: #DEB559;
+  border-color: darken(#DEB559, 5%);
+  color: #145E6E;
+
+}
+
+.navbar-default .navbar-text{
+  color: #f3f3f3 !important;
+}
 .search-over {
   color: #F3F3F3 !important;
 }
@@ -65,6 +83,9 @@
       float: none;
       &:hover {
         cursor: pointer;
+      }
+      &:focus {
+        background-color: #05d3d3;
       }
     }
     .badge {
