@@ -60,6 +60,8 @@ html, body {
 .gn-row-main {
   padding: 2em 0 4em;
   background-image: url("https://raw.githubusercontent.com/Victor-457/geonetwork/main/catalog/views/default/images/fundoPesquisa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   .gn-form-any {
     .input-lg {
       &:focus {
@@ -68,12 +70,12 @@ html, body {
       }
     }
     .btn {
-      background-color: @gn-search-button-background-color;
-      border-color: darken(@gn-search-button-background-color, 5%);
+      background-color: #DEB559;
+      border-color: darken(#DEB559, 5%);
       color: @gn-search-button-color;
       &:hover {
-        background-color: darken(@gn-search-button-background-color, 10%);
-        border-color: darken(@gn-search-button-background-color, 15%);
+        background-color: darken(#DEB559, 10%);
+        border-color: darken(#DEB559, 15%);
       }
     }
   }
